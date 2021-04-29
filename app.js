@@ -4,7 +4,7 @@ const express = require('express');
 // Modulo Mongoose
 const mongoose = require('mongoose')
 
-const uri = "mongodb+srv://root:toor@cluster0.lo8dg.mongodb.net/fototeca-mongoose"; 
+const uri = "YOUR-URI-HERE/fototeca-mongoose"; 
 
 // Custom modules
 const imageRoutes = require('./routes/images');
