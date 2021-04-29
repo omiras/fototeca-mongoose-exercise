@@ -15,9 +15,13 @@ An image is  defined as:
 
 ## Iteration 2
 
-Adapt all the controllers so the app works again as expected. You should be able to perform all the basic CRUD operation: Create, Retrieve all images, Update and image, and Delete an image.
+Adapt all the controllers so the app works again as expected. You should be able to perform all the basic CRUD operation: Create, Retrieve all images, Update and image, and Delete an image. Start by implementing the Add New Image requirement and List All Images.
 
 Note: You may have to modify the __date__ picker in the view, to another [HTML control](https://developer.mozilla.org/es/docs/Web/HTML/Element/input/datetime) that will generate a UTC date. 
+
+There two options to perform an update or delete to a Mongoose document:
+- Option 1: Use a [Model method](https://mongoosejs.com/docs/models.html#updating) to find the document in the collection and update it 
+- Option 2: Use a [Document method](https://mongoosejs.com/docs/documents.html#updating-using-save) to retrieve the document, update, and then save it again.
 
 ## Iteration 3
 
