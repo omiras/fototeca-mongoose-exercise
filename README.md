@@ -32,6 +32,13 @@ Perform [extra validation](https://mongoosejs.com/docs/validation.html#custom-va
 
 If any custom validation is not passed, the client should receive a 500 error.
 
+Try to use __curl__ to check if your model validation is working:
+
+```
+curl -X POST -d 'imageName=dfsdfkdsfjdsfjkdsfdslkfdsfsd&date=2019-12-12&imageURL=https://i.picsum.photos/id/325/200/200.jpg?hmac=ZCsEKv0ID3Pljov7A1Ljhc4gOcr8fsqzEry_bTjeY2s' http://localhost:3000/add-new
+
+```
+
 ## Bonus Iteration
 
 For each image that successfully is inserted in the database, gather the EXIF information from the URL. You could use this [repo](https://github.com/ianare/exif-samples/tree/master/jpg) to gather the images
