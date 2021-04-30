@@ -19,7 +19,7 @@ Adapt all the controllers so the app works again as expected. You should be able
 
 Note: You may have to modify the __date__ picker in the view, to another [HTML control](https://developer.mozilla.org/es/docs/Web/HTML/Element/input/datetime) that will generate a UTC date. 
 
-There two options to perform an update or delete to a Mongoose document:
+There two options to perform an update to a Mongoose document:
 - Option 1: Use a [Model method](https://mongoosejs.com/docs/models.html#updating) to find the document in the collection and update it 
 - Option 2: Use a [Document method](https://mongoosejs.com/docs/documents.html#updating-using-save) to retrieve the document, update, and then save it again.
 
